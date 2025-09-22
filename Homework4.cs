@@ -8,18 +8,16 @@ class Program
 /*
         // Call Q1_method()
 
-        Console.WriteLine("Enter first number: ");
-        string first_num = Console.ReadLine();
-        int first_int = Convert.ToInt16(first_num);
+       Console.WriteLine("Enter two numbers: ");
+        int num_1 = getNumber();
+        int num_2 = getNumber();
 
-        Console.WriteLine("Enter second number: ");
-        string second_num = Console.ReadLine();
-        int second_int = Convert.ToInt16(second_num);
 
-        Console.WriteLine($"a = {first_int}; b = {second_int}");
+        Console.WriteLine($"a = {num_1}; b = {num_2}");
 
-        int returned_largest = LargestNumber(first_int, second_int);
+        int returned_largest = LargestNumber(num_1, num_2);
         Console.WriteLine($"The largest number is: {returned_largest}");
+
         
 
 
@@ -40,19 +38,27 @@ class Program
     }
 
         // Q1_method
+
+        
+   static int getNumber()
+    {
+        string input_num = Console.ReadLine();
+        int input_int = Convert.ToInt16(input_num);
+        return input_int;
+    }
     static int LargestNumber(int a, int b)
+    {
+        if (a > b)
         {
-            if (a > b)
-            {
-                return a;
-            }
-            else
-            {
-                return b;
-            }
-
-
+            return a;
         }
+        else
+        {
+            return b;
+        }
+
+
+    }
         
 
         // Q2_method
@@ -123,4 +129,5 @@ class Program
 
 
     
+
 
