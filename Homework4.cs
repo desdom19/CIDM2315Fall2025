@@ -9,8 +9,8 @@ class Program
         // Call Q1_method()
 
        Console.WriteLine("Enter two numbers: ");
-        int num_1 = getNumber();
-        int num_2 = getNumber();
+        int num_1 = GetNumber();
+        int num_2 = GetNumber();
 
 
         Console.WriteLine($"a = {num_1}; b = {num_2}");
@@ -129,6 +129,7 @@ class Program
 
 
     
+
 
 
 
